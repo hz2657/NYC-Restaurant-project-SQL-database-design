@@ -18,3 +18,17 @@ Considering the recovering state of New York City in light of the COVID-19 healt
 OKR
 1. Design a 3NF database, populate the data in SQL
 2. Submit a plan for how the customers will interact with the database system. What to implement for analysts (direct querying) and for "C" level officers (reports)? Plans for redundancy and performance?
+
+
+for analysts
+1. find the most common violations and violation trends
+2. identify restaurants by the number of violations
+3. group restaurants with a lot of violations together
+4. if there are more violations in weekdays or weekends?/summer/winter   
+5. Which cuisine tends to have more violations
+6. heat map visualization by number of violations/cuisine/time
+  
+for "C" level officers (reports)
+1. which restaurants will need further inspections
+
+
