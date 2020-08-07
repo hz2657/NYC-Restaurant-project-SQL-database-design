@@ -20,6 +20,8 @@ OKR
 2. Submit a plan for how the customers will interact with the database system. What to implement for analysts (direct querying) and for "C" level officers (reports)? Plans for redundancy and performance?
 
 <img src="graph/ER diagram1.png" alt="dashboard preview" width="900"/>
+<img src="graph/restaurants by number of violations.png" alt="dashboard preview" width="900"/>
+
 
 for analysts
 1. find the most common violations and violation trends
