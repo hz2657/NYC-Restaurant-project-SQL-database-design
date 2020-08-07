@@ -26,20 +26,21 @@ OKR
 <img src="graph/dashboard.png" alt="dashboard preview" width="700"/>
 
 
-for analysts
-1. find the most common violations and violation trends
-2. identify restaurants by the number of violations
-3. group restaurants with a lot of violations together
-4. if there are more violations in weekdays or weekends?/summer/winter   
-5. Which cuisine tends to have more violations
-6. heat map visualization by number of violations/cuisine/time
+**for analysts**
+1. Identify restaurants by the number of violations 
+2. Identify if there are more violations in weekdays or weekends
+3. Identify cuisines that tend to have more violations
+4. Group restaurants with same degree of number of violations together
+5. Create plots and charts from the SQL query outputs using Seaborne/Matlab Plot in Python
+6. Identify the most common liquor license types in each borough
+7. Ranking restaurant cuisines by the number of food poison incidents
+8. Identify the number of restaurant location types in each borough
+9. Identify zip codes with most violations
+
   
-for "C" level officers (reports)
-1. which restaurants will need further inspections
-
-
-
-<img src="graph/ER diagram1.png" alt="dashboard preview" width="900"/>
+**for "C" level officers (reports)**
+1. Identify which restaurants will need further inspections
+2. Summarize information such as the top 10 worst restaurants by violation rate
 
 
 
