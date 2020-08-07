@@ -21,7 +21,7 @@ OKR
 
 
 
-*A quick view of dashboard*
+**A quick view of dashboard**
 
 <img src="graph/dashboard.png" alt="dashboard preview" width="700"/>
 
