@@ -20,9 +20,9 @@ OKR
 2. Submit a plan for how the customers will interact with the database system. What to implement for analysts (direct querying) and for "C" level officers (reports)? Plans for redundancy and performance?
 
 
-Restaurants by number of violations
+A quick view of dashboard
 
-<img src="graph/restaurants by number of violations.png" alt="dashboard preview" width="700"/>
+<img src="graph/dashboard.png" alt="dashboard preview" width="700"/>
 
 
 for analysts
