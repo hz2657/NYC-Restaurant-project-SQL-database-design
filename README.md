@@ -17,7 +17,7 @@ Considering the recovering state of New York City in light of the COVID-19 healt
 
 5. Group restaurants with similar degree of violations together, for ease of checking and managing
 
-6. Building a recommendation systems for consumers who looking for safe and clean restaurants for different cuisine.
+6. Provide recommendations for consumers who looking for safe and clean restaurants for different cuisine.
 
 
 OKR
