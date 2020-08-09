@@ -43,7 +43,7 @@ OKR
 2. Summarize information such as the top 10 worst restaurants by violation rate
 
 
-This dashboard contains the following information:
+**This dashboard contains the following information:**
 
 The number of restaurants, community board, restaurants violations, food poisoning complaints
 Restaurants whose licenses will expire over time 
