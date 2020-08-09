@@ -43,4 +43,18 @@ OKR
 2. Summarize information such as the top 10 worst restaurants by violation rate
 
 
+This dashboard contains the following information:
+
+The number of restaurants, community board, restaurants violations, food poisoning complaints
+Restaurants whose licenses will expire over time 
+The distribution of restaurants’ cuisines in NYC
+Restaurants with the most number of inspection violations, as shown in the pie chart, AppleBee has the most violations. 
+The most frequent restaurants violations, as shown in the pie chart, they are 10F, 08A, 06D, referring to the referenced table, these violations are: 
+- Non food contact surface improperly constructed
+- Facility not vermin proof. Conditions to attract vermin and allow them to exist.
+- Food contact surface not properly washed 
+Restaurants with the most number of reported food poisoning cases, as shown in the bar chart, Chipotle and Starbucks have the most cases 
+
+
+
 
