@@ -1,4 +1,4 @@
-#find the most common violations and violation trends
+# 1. find the most common violations and violation trends
 q1 = """SELECT violation_description, count
 FROM
 (SELECT violation_code, COUNT(*) FROM
@@ -11,7 +11,8 @@ restaurants_violations NATURAL JOIN violations
 ) AS LOO
 ORDER BY count DESC;"""
 
-#identify restaurants by the number of violations (rank) 
+
+# 2. identify restaurants by the number of violations (rank) 
 
 # option 1: group by camis
 q2_1 = """SELECT restaurant_name_violations, camis, incedents_count, rank FROM
@@ -38,7 +39,7 @@ GROUP BY restaurant_name_violations
 WHERE rank <=100;"""
 
 
-#if there are more violations in weekdays or weekends?/summer/winter
+# 3. if there are more violations in weekdays or weekends?/summer/winter
 
 q3 = """SELECT
   day_of_the_week,
@@ -48,7 +49,9 @@ FROM
 GROUP BY
   day_of_the_week"""
 
-#Which cuisine tends to have more violations
+  
+  
+# 4. Which cuisine tends to have more violations
 
 q4 = """SELECT c.cuisine_name, count(rv.violation_code) as violations
 ,rank() over (order by count(rv.violation_code) desc) as s_rank
@@ -58,7 +61,8 @@ join cuisines as c on c.cuisine_id = rc.cuisine_id
 GROUP BY c.cuisine_name"""
 
 
-#group restaurants with a lot of violations together
+  
+# 5. group restaurants with a lot of violations together
 
 q5 = """Select restaurant_name_violations, violations,
 CASE
@@ -74,7 +78,8 @@ join restaurants as r on r.camis=rv.camis
 group by r.restaurant_name_violations) as foo
 order by violations_group"""
 
-# What are the most common liquor license types for each of the boroughs
+  
+# 6. What are the most common liquor license types for each of the boroughs
 
 q6 = """SELECT borough_name, license_type_code, COUNT(license_type_code)
 FROM (
@@ -87,7 +92,7 @@ ORDER BY borough_name, COUNT DESC;
 """
 
 
-# Ranking restaurant cuisines by the number of incidents
+# 7. Ranking restaurant cuisines by the number of incidents
 
 q7 = """SELECT cuisine_name, comp_count
 FROM
@@ -99,7 +104,7 @@ ORDER BY comp_count DESC) as sub
 WHERE rank <= 5;"""
 
 
-# Identify the number of restaurant location types within each borough
+# 8. Identify the number of restaurant location types within each borough
 q8 = """SELECT borough_name, location_type, count(CAMIS)
 FROM restaurants
 NATURAL JOIN location_types
@@ -107,7 +112,7 @@ GROUP BY borough_name, location_type
 ORDER BY borough_name, count DESC;"""
 
 
-#Identify zip codes with most violations
+# 9. Identify zip codes with most violations
 q9 = """
 SELECT zip, count(violation_code) as violations, rank() over (order by count(violation_code) desc) as rank
 FROM restaurants
@@ -115,6 +120,7 @@ NATURAL JOIN restaurants_violations
 GROUP BY zip;
 """
 
+# 10. Identify restuarants by incidents_group
 q10 = """Select restaurant_name_violations, incidents,
 CASE
     WHEN incidents > 10  THEN 'The restaurant has many food poisoning incidents'
